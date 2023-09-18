@@ -1,0 +1,10 @@
+<div class="page-container">
+    <main class="page-content">
+        <h1>My Languages</h1>
+        <p>This is the languages I'm experienced with. Some of them I love. Some of them are just there and I must to
+            live with it...</p>
+        <div class="separated-container" *ngFor="let item of items">
+            <app-skill-card [data]="item" [brief]="false"></app-skill-card>
+        </div>
+    </main>
+</div>

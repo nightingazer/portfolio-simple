@@ -1,0 +1,16 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+footer {
+    background-color: var(--bg-dark-0-col);
+
+    .page-content {
+        padding: 3rem 0;
+        opacity: 0.8;
+    }
+}

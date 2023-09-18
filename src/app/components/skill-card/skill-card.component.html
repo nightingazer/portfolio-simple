@@ -1,0 +1,10 @@
+<div class="card-container" [ngClass]="{brief}">
+    <h3 class="title">{{data.title}}</h3>
+    <div class="skill-date">
+        {{getExperienceLabel()}}
+    </div>
+    <p class="brief-description">{{data.brief}}</p>
+    <div class="description" *ngIf="!brief">
+        {{data.description}}
+    </div>
+</div>

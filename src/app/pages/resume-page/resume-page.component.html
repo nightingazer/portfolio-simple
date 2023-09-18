@@ -1,0 +1,47 @@
+<div class="page-container">
+    <main class="page-content">
+        <section class="summary">
+            <h1>My Professional Experience Summary</h1>
+            <p>
+                My professioanal cereer started in the web development as a
+                freelancer without any specific focus or specializatiohn. I was
+                doing anything what client wanted me to do. Anything from
+                Wordpress to some simple applications with React frontend and
+                Express backend
+            </p>
+            <p>
+                After some time like that I've started as a full time employee
+                at Modsen as a junior frontend developer, where I've got some
+                more structured mentorship and learned a lot about the frontend
+                and web development in general. Also, there I've started to
+                focus more on some specific technologies, I liked the most, and
+                that was Angular with libraries like RxJS or NgRx.
+            </p>
+            <p>
+                Also somewhere in the middle of my time at Modsen I've started
+                to pick up some serious knowledge on the topic of backend
+                development because of the project I've had at the moment. That
+                was ASP.Net Core with C# and Entity Framework. I've learned a
+                lot about the backend development and I've started to like it
+                more and more, so a the end of my time at Modsen I was a full
+                stack developer.
+            </p>
+            <p>
+                At my free time event then I was constatly learning new things
+                and technologies, and because of that I've started a new
+                position as a full stack developer at ASTEK Polska, where I am
+                currently working. Mostly I am working with Angular, a Spring
+                backend and Oracle database right now. But here and there I must
+                extend my knowledge to some other technologies like Bash, Python
+                and C++ depending on the situation on the project, as it is
+                massive and there is a lot of legacy code.
+            </p>
+        </section>
+        <section class="experience">
+            <h2>My Jobs</h2>
+            <div *ngFor="let item of jobs" class="separated-container">
+                <app-job-card [data]="item"></app-job-card>
+            </div>
+        </section>
+    </main>
+</div>

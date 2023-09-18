@@ -1,0 +1,13 @@
+<div>
+    <app-header *ngIf="isHeaderVisible()"></app-header>
+    <router-outlet></router-outlet>
+</div>
+<footer class="page-container">
+    <div class="page-content">
+        <p>
+            ©{{ getCopyrightYears() }} Alex Hryshan. This web page is built
+            with Angular and its source code is available on
+            <a href="https://github.com/nightingazer/portfolio-simple">Github</a>
+        </p>
+    </div>
+</footer>

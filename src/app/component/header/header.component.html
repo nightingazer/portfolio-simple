@@ -1,0 +1,27 @@
+<header>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="header-fragment">
+            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="home-button">
+                <img src="assets/img/portfolio_logo_no_bg.svg" />
+            </a>
+        </div>
+        <div class="header-fragment">
+            <ng-container *ngIf="collapseHeader() || true; else navLinks">
+                <img (click)="toggleMenu()" class="icon-button"
+                    [src]="showMenu() ? '/assets/img/exit.svg' : '/assets/img/hamburger.svg'">
+            </ng-container>
+        </div>
+    </div>
+
+    <div class="menu" *ngIf="showMenu()">
+        <ng-container [ngTemplateOutlet]="navLinks"></ng-container>
+    </div>
+</header>
+
+
+<ng-template #navLinks>
+    <a routerLink="/technologies" routerLinkActive="active">My Tech</a>
+    <a routerLink="/languages" routerLinkActive="active">My languages</a>
+    <a routerLink="/resume" routerLinkActive="active">My Resumé</a>
+</ng-template>

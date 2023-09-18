@@ -1,0 +1,29 @@
+<div class="card-wrapper">
+    <h3>{{data.title}} - <ng-container *ngIf="data.employerUrl; else employerNoUrl">
+            <a href="{{data.employerUrl}}" target="_blank" class="employer">{{data.employer}}</a>
+        </ng-container></h3>
+    <p class="dates">{{data.startDate | date: 'MMM YYYY'}} - {{data.endDate ? (data.endDate | date: 'MMM YYYY') :
+        'Currently'}}</p>
+    <p>
+        {{data.description}}
+    </p>
+    <div class="lists">
+        <div class="responsibilities">
+            <h4>Responsibilities:</h4>
+            <ul>
+                <li *ngFor="let responsibility of data.responsibilities">{{responsibility}}</li>
+            </ul>
+        </div>
+        <div class="technologies">
+            <h4>Technologies:</h4>
+            <ul>
+                <li *ngFor="let technology of data.technologies">{{technology}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<ng-template #employerNoUrl>
+    <span class="employer">{{data.employer}}</span>
+</ng-template>

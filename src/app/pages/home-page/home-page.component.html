@@ -1,0 +1,59 @@
+<div class="page-container">
+    <div class="page-content">
+        <section class="greetings">
+            <p class="hi">Hi!</p>
+            <img class="avatar" alt="" src="assets/img/avatar_fancy.jpeg" />
+            <h1 class="i-am">I am<br />Alex Hryshan</h1>
+        </section>
+    </div>
+</div>
+
+<app-header></app-header>
+
+<div class="page-container">
+    <main class="page-content">
+        <section class="summary">
+            <p>
+                I’m a software developer based in Poland with more than 3 years
+                of experience. <br />
+                My journey in the world of technology is more than just a job;
+                it's a passionate pursuit. I take immense pride in nurturing my
+                technical skills, constantly pushing the boundaries of what I’m
+                capable of. I'm always on the lookout for the latest trends and
+                emerging technologies, drawing inspiration from sometimes
+                unexpected places.
+            </p>
+
+            <p>
+                I’m constantly trying to stay sharp in what I’m doing. For
+                example right now I’m learning <b>Rust</b> (and really enjoying
+                that)
+            </p>
+            <p>
+                Right now I'm working at
+                <a href="https://astek.pl/" target="_blank">ASTEK Polska</a> as
+                a full-stack developer. Also, <a routerLink="/resume">here</a>
+                you can see my full resume
+            </p>
+            <p>
+                I freely speak <b>English</b>, <b>Polish</b> and <b>Russian</b>,
+                so feel free to contact in any of those languages
+            </p>
+        </section>
+
+        <section class="langs">
+            <h2>My programming languages</h2>
+            <p>This is the languages I'm most proficient with:</p>
+            <app-skill-card *ngFor="let item of langs" [data]="item"></app-skill-card>
+
+            <a routerLink="/languages">See all of them</a>
+        </section>
+
+        <section class="tech">
+            <h2>My tech stack</h2>
+            <p>This is the technologies I'm most proficient with:</p>
+            <app-skill-card *ngFor="let item of technologies" [data]="item"></app-skill-card>
+            <a routerLink="/technologies">See all of them</a>
+        </section>
+    </main>
+</div>

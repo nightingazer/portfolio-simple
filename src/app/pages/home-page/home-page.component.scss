@@ -1,0 +1,77 @@
+.avatar {
+    width: 30rem;
+    height: 30rem;
+
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+
+    place-self: center;
+
+    @media (max-width: 768px) {
+        width: 20rem;
+        height: 20rem;
+
+        margin-top: 0;
+    }
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.greetings {
+    display: grid;
+    height: 100vh;
+    height: 100dvh;
+
+    padding: 3rem 0;
+
+    .avatar {
+        grid-column: 1 / -1;
+        grid-row: 2 / -1;
+    }
+
+    .hi,
+    .i-am {
+        font-size: 5rem;
+        font-weight: 900;
+        margin: 0;
+
+        @media (max-width: 768px) {
+            font-size: 4rem;
+        }
+    }
+
+    .hi {
+        grid-column: 1 / 1;
+        grid-row: 1;
+
+        place-self: end start;
+
+        @media (max-width: 768px) {
+            grid-column: 1 / -1;
+            grid-row: 1 / 1;
+
+            place-self: start center;
+        }
+    }
+
+    .i-am {
+        place-self: end start;
+
+        grid-column: 1 / -1;
+        grid-row: 3;
+
+        @media (max-width: 768px) {
+            grid-column: 1 / -1;
+            grid-row: 2 / -1;
+        }
+    }
+}
+
+.summary {
+    font-size: 1.33rem;
+}

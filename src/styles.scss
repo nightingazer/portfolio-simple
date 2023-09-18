@@ -1,0 +1,132 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+    --bg-base-col: #272229;
+    --text-base-col: #eee;
+    --accent-base-col: #38a9d0;
+
+    --accent-bg-col: #28323c;
+    --bg-2-col: #2c2f33;
+    --bg-dark-0-col: #1a1618;
+
+    font-size: 125%;
+
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    :root {
+        font-size: 12px;
+    }
+
+    @media (-webkit-min-device-ratio: 2) {
+        :root {
+            font-size: 16px;
+        }
+    }
+}
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-base-col);
+    color: var(--text-base-col);
+
+    font-family: 'Roboto', sans-serif;
+
+    font-weight: 300;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0.33em;
+    position: absolute;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--bg-dark-0-col);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--accent-base-col);
+}
+
+::-webkit-scrollbar-corner {
+    background-color: var(--bg-dark-0-col);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+.page-content {
+    width: 100%;
+    max-width: 1200px;
+}
+
+a {
+    color: var(--accent-base-col);
+    font-weight: bold;
+
+    text-decoration: none;
+
+    position: relative;
+
+    &.active::before {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 0.15em;
+        bottom: 0;
+        left: 0;
+        background-color: currentColor;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.25s ease-in-out 0s;
+    }
+
+    &:hover::before {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+}
+
+.separated-container {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-top: 1px solid currentColor;
+
+    &:last-of-type {
+        margin-bottom: 2em;
+        border-bottom: 1px solid currentColor;
+    }
+
+    &:first-of-type {
+        margin-top: 2em;
+    }
+}
+
+.icon-button {
+    width: 1.25em;
+    height: 1.25em;
+}

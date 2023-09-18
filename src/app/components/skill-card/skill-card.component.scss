@@ -1,0 +1,45 @@
+.card-container {
+    display: grid;
+
+    align-items: center;
+
+    grid-template-areas:
+        'title experience'
+        'brief brief'
+        'description description';
+
+    grid-template-columns: minmax(min-content, 25%) 1fr;
+
+    &.brief {
+        gap: 2em;
+        grid-template-areas: 'title experience brief';
+
+        grid-template-columns: minmax(min-content, 25%) min-content 1fr;
+    }
+}
+
+.skill-date {
+    font-weight: 400;
+
+    grid-area: experience;
+}
+
+.title {
+    margin: 0;
+
+    grid-area: title;
+}
+
+app-progress-bar {
+    flex-grow: 2;
+}
+
+.brief-description {
+    font-style: italic;
+
+    grid-area: brief;
+}
+
+.description {
+    grid-area: description;
+}

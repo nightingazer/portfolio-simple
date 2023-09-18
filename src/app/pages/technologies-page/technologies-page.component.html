@@ -1,0 +1,16 @@
+<div class="page-container">
+    <main class="page-content">
+        <h1>My technologies</h1>
+        <p>This is the technologies I'm experienced with. Some of them I love.
+            Some of them are just there and I must to live with it*...
+        </p>
+        <cite>
+            * Be aware that some of those statements below might be pretty
+            opinionated. If your opinion is different, I respect it, you have a
+            right to have it.
+        </cite>
+        <div class="separated-container" *ngFor="let item of items">
+            <app-skill-card [data]="item" [brief]="false"></app-skill-card>
+        </div>
+    </main>
+</div>
