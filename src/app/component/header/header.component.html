@@ -7,7 +7,7 @@
             </a>
         </div>
         <div class="header-fragment">
-            <ng-container *ngIf="collapseHeader() || true; else navLinks">
+            <ng-container *ngIf="collapseHeader(); else navLinks">
                 <img (click)="toggleMenu()" class="icon-button"
                     [src]="showMenu() ? '/assets/img/exit.svg' : '/assets/img/hamburger.svg'">
             </ng-container>
