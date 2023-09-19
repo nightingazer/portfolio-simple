@@ -2,14 +2,15 @@ import { Component, signal } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router'
 import { Subscription, filter } from 'rxjs'
-import { HeaderComponent } from './component/header/header.component'
+import { HeaderComponent } from './components/header/header.component'
+import { IconComponent } from './components/icon/icon.component'
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
-    imports: [CommonModule, RouterOutlet, HeaderComponent],
+    imports: [CommonModule, RouterOutlet, HeaderComponent, IconComponent],
 })
 export class AppComponent {
     title = 'portfolio-simple'

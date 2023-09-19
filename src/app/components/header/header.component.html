@@ -3,13 +3,12 @@
     <div class="container">
         <div class="header-fragment">
             <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="home-button">
-                <img src="assets/img/portfolio_logo_no_bg.svg" />
+                <app-icon icon="home"></app-icon>
             </a>
         </div>
         <div class="header-fragment">
             <ng-container *ngIf="collapseHeader(); else navLinks">
-                <img (click)="toggleMenu()" class="icon-button"
-                    [src]="showMenu() ? '/assets/img/exit.svg' : '/assets/img/hamburger.svg'">
+                <app-icon (click)="toggleMenu()" [icon]="showMenu() ? 'exit' : 'hamburger'"></app-icon>
             </ng-container>
         </div>
     </div>

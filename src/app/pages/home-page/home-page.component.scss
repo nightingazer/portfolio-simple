@@ -11,8 +11,6 @@
     @media (max-width: 768px) {
         width: 20rem;
         height: 20rem;
-
-        margin-top: 0;
     }
 }
 
@@ -41,7 +39,7 @@
         margin: 0;
 
         @media (max-width: 768px) {
-            font-size: 4rem;
+            font-size: 3.5rem;
         }
     }
 
@@ -73,5 +71,20 @@
 }
 
 .summary {
-    font-size: 1.33rem;
+    // font-size: 1.33rem;
+}
+
+.social {
+    display: inline-flex;
+    gap: 1em;
+
+    align-items: baseline;
+
+    font-size: 2rem;
+
+    a {
+        svg {
+            fill: currentColor;
+        }
+    }
 }
