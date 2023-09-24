@@ -11,7 +11,7 @@ const TSJS: SkillCardData = {
 };
 
 const JAVA: SkillCardData = {
-  title: "J*ava",
+  title: "J*va",
   experience: 2,
   brief: "I'm pretty confident with it, but can't say I'm a fan."
 }
@@ -41,7 +41,7 @@ const CPP: SkillCardData = {
 const CS: SkillCardData = {
   title: "C#",
   experience: 1,
-  brief: "Made a couple of projects with it. Definitely better than J*ava.",
+  brief: "Made a couple of projects with it. Definitely better than J*va.",
   description: "One of the few things Microsoft made decent"
 }
 
