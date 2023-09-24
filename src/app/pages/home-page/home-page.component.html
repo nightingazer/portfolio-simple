@@ -1,21 +1,38 @@
-<div class="page-container">
+<app-header></app-header>
+
+<div class="page-container greeting-container">
     <div class="page-content">
         <section class="greetings">
-            <p class="hi">Hi!</p>
             <img class="avatar" alt="" src="assets/img/avatar_fancy.jpeg" />
-            <h1 class="i-am">I am<br />Alex Hryshan </h1>
+            <div class="text-section">
+                <h1 class="i-am">
+                    My name is Alex Hryshan
+
+                    <div class="social">
+                        <a target="_blank" href="https://www.linkedin.com/in/alex-hryshan">
+                            <app-icon icon="linkedin-logo"></app-icon>
+                        </a>
+                        <a target="_blank" href="https://github.com/nightingazer">
+                            <app-icon icon="github-logo"></app-icon>
+                        </a>
+                        <a target="_blank" href="https://twitter.com/fancybodyhole_">
+                            <app-icon icon="twitter-logo"></app-icon>
+                        </a>
+                    </div>
+                </h1>
+                <p>
+                    I’m a software developer based in Poland with more than 3 years
+                    of experience. <br />
+                </p>
+            </div>
         </section>
     </div>
 </div>
-
-<app-header></app-header>
 
 <div class="page-container">
     <main class="page-content">
         <section class="summary">
             <p>
-                I’m a software developer based in Poland with more than 3 years
-                of experience. <br />
                 My journey in the world of technology is more than just a job;
                 it's a passionate pursuit. I take immense pride in nurturing my
                 technical skills, constantly pushing the boundaries of what I’m

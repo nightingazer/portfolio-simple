@@ -35,14 +35,14 @@ const CPP: SkillCardData = {
   title: "C++",
   experience: 2,
   brief: "Definitely my favorite language. And I'm pretty confident in working with it.",
-  description: "Nice language, but an absolutely horrendous dependency management and building experience. I'd rather cut my leg than use it."
+  description: "Nice language, but an absolutely horrendous dependency management and building experience. I'd rather cut my leg than edit CMakeLists.txt again."
 }
 
 const CS: SkillCardData = {
   title: "C#",
   experience: 1,
   brief: "Made a couple of projects with it. Definitely better than J*ava.",
-  description: "A very strong language, which almost fulfills the promises made by J*ava. I almost like it, but anyway, it's hard to see a reason to use something like that today when we have Rust. Even C++'s cross-platform is not a very difficult matter if you think about it at this point. And it definitely is not so difficult when you are working with the web. C# is among a very limited number of things which Microsoft made good."
+  description: "One of the few things Microsoft made decent"
 }
 
 const SQL: SkillCardData = {

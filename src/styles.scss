@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import '/node_modules/normalize.css/normalize.css';
+
 :root {
     --bg-base-col: #272229;
     --text-base-col: #eee;
@@ -9,23 +11,19 @@
     --bg-2-col: #2c2f33;
     --bg-dark-0-col: #1a1618;
 
-    font-size: 125%;
-
-    letter-spacing: 0.1em;
-    line-height: 1.5;
 }
 
-@media (max-width: 768px) {
-    :root {
-        font-size: 14px;
-    }
+// @media (max-width: 768px) {
+//     :root {
+//         font-size: 14px;
+//     }
 
-    @media (-webkit-min-device-ratio: 2) {
-        :root {
-            font-size: 16px;
-        }
-    }
-}
+//     @media (-webkit-min-device-ratio: 2) {
+//         :root {
+//             font-size: 16px;
+//         }
+//     }
+// }
 
 html,
 body {
@@ -34,13 +32,10 @@ body {
     background-color: var(--bg-base-col);
     color: var(--text-base-col);
 
-    font-family: 'Roboto', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
 
     font-weight: 300;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
